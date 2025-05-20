@@ -1,0 +1,31 @@
+El analizador consta de varios archivos. A continuación, una
+breve explicacion de alguno de estos:
+
+	- Ejemplos: se encuentran en dos archivos de texto para la entrada, y dos archivos de texto para la salida.
+
+	- MiProyecto: ejecutable del analizador.
+
+	- reglasAsignadas: reglas sintácticas dadas por el
+			   profesor.
+			  
+La comprobación de la validez de una cadena se puede realizar
+de dos maneras:
+	
+	1) Ejecutando el archivo analizador.exe y escribiendo
+	   la cadena a analizar con espacios entre cada palabra
+
+	2) Con la consola indicando la ruta donde se encuentra
+	   el .exe y el .txt con la cadena a analizar (se deben
+	   copiar los .txt de la carpeta Ejemplos en la carpeta
+	   Analizador de modo que queden en la misma ruta que
+	   el .exe) ejecutar el siguiente comando:
+		Analizador.exe (...).txt
+
+A TENER EN CUENTA: si se desea hacer de la segunda manera,
+procurar que el archivo .txt, luego de redactar la cadena
+dejar una linea vacia por debajo para que no haya errores
+durante la ejecución. 
+
+
+## A PESAR DE TENER system("pause") se cierra el analizador automaticamente.
+

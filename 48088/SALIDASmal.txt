@@ -1,0 +1,7 @@
+Ingrese la cadena:
+id :
+ ERROR: LA CADENA DEBE TERMINAR EN 'booleano' o 'comentario'
+
+Ingrese la cadena:
+booleano ;
+ ERROR: LA CADENA DEBE TERMINAR EN 'booleano' o 'comentario'

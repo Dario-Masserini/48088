@@ -1,0 +1,86 @@
+
+Ingrese la cadena:
+booleano ; comentario
+  *** LA CADENA ES VALIDA ***
+===============================TABLA DE SIMBOLOS===============================
+|                LEXEMAS               |                 TOKENS               |
+---------------------------------------+---------------------------------------
+|                   ;                  |               PCOMA                  |
+|                booleano              |               BOOLEANO               |
+|               comentario             |              COMENTARIO              |
+===============================================================================
+
+
+
+===========================ARBOL DE DERIVACION===========================
+                              Assertion
+                                  ||
+                      ---------------------------
+                     ||           ||            ||
+            Assertion_clause      ';'    Assertion_clause
+                     ||                         ||
+        Unlabeled_assertion_clause  Unlabeled_assertion_clause
+                     ||                         ||
+             Boolean_expresion               Comment
+                     ||                         ||
+                 'booleano'                 'comentario'
+
+
+
+
+
+Ingrese la cadena:
+id : booleano
+  *** LA CADENA ES VALIDA ***
+===============================TABLA DE SIMBOLOS===============================
+|                LEXEMAS               |                 TOKENS               |
+---------------------------------------+---------------------------------------
+|                   id                 |               IDE                    |
+|                   :                  |               PCOMA                  |
+|                booleano              |               BOOLEANO               |
+===============================================================================
+
+
+
+===========================ARBOL DE DERIVACION===========================
+                    Assertion
+                        ||
+                 Assertion_clause
+                        ||
+            ---------------------------
+            ||                        ||
+         Tang_mark          Unlabeled_assertion_clause
+            ||                        ||
+        ----------            Boolean_expresion
+       ||        ||                   ||
+      Tag        ':'             'booleano'
+       ||
+      'id'
+
+
+Ingrese la cadena:
+booleano ; booleano ; booleano
+    *** LA CADENA ES VALIDA ***
+===============================TABLA DE SIMBOLOS===============================
+|                LEXEMAS               |                 TOKENS               |
+---------------------------------------+---------------------------------------
+|                   ;                  |               PCOMA                  |
+|                booleano              |               BOOLEANO               |
+===============================================================================
+
+
+
+===========================ARBOL DE DERIVACION===========================
+                                                Assertion
+                                                    ||
+                      -----------------------------------------------------------------
+                     ||             ||              ||               ||               ||
+            Assertion_clause        ';'     Assertion_clause         ';'      Assertion_clause
+                     ||                             ||                                ||
+        Unlabeled_assertion_clause       Unlabeled_assertion_clause       Unlabeled_assertion_clause
+                     ||                             ||                                ||
+             Boolean_expresion               Boolean_expresion                Boolean_expresion
+                     ||                             ||                                ||
+                 'booleano'                     'booleano'                        'booleano'
+
+

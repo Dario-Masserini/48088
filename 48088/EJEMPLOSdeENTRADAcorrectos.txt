@@ -1,0 +1,5 @@
+booleano ; comentario
+
+id : booleano
+
+booleano ; booleano ; booleano

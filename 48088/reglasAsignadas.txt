@@ -1,0 +1,8 @@
+Assertion ::={Assertion_clause ";"}Assertion_clause
+Assertion_clause ::=[Tang_mark] Unlabeled_assertion_clause
+Tag_mark ::= Tag ":"
+Tag ::= Identifier
+Unlabeled_assertion_clause ::= Boolean_expresion | Comment
+Identifier ::= "id"
+Comment ::= "comentario"
+Boolean_expresion ::= "booleano"
